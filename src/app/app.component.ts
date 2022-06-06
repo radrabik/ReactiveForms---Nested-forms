@@ -11,7 +11,8 @@ export class AppComponent  {
 
   form = this.fb.group({
     name: [null],
-    surename: [null],
+    surname: [null],
+    address: [null, Validators.required],
     thumbnail: [null],
   });
 
