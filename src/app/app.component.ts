@@ -10,6 +10,8 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
   form = this.fb.group({
+    name: [null],
+    surename: [null],
     thumbnail: [null],
   });
 

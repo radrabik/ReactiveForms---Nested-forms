@@ -1,6 +1,23 @@
 
 <div [formGroup]="form">
 
+  <!-- Name -->
+  <div>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name" #name>
+    </mat-form-field>
+  </div>
+
+  <!-- Surname -->
+  <div>
+      <mat-form-field>
+      <mat-label>Surname</mat-label>
+        <input matInput placeholder="Surname" formControlName="surname" #surname>
+      </mat-form-field>
+  </div>
+
+
   <!-- File upload -->
   <app-file-upload formControlName="thumbnail" requiredFileType="image/png"></app-file-upload>
 
