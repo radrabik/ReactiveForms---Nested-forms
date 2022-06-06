@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { AddressFormComponent } from './address-form/address-form.component';
 
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -32,7 +33,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
   declarations: [ 
     AppComponent, 
     HelloComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    AddressFormComponent
 
   ],
   bootstrap:    [ AppComponent ]
