@@ -1,5 +1,5 @@
 
-<div [formGroup]="form">
+<div [formGroup]="form" style="width: 40%">
 
   <!-- Name -->
   <div>
@@ -18,7 +18,9 @@
   </div>
 
   <!-- Address nested form -->
-  
+  <div>
+      <app-address-form legend="Address"></app-address-form>
+  </div>
 
   <!-- File upload -->
   <app-file-upload formControlName="thumbnail" requiredFileType="image/png"></app-file-upload>
