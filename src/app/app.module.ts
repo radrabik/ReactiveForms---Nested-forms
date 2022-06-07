@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { AddressFormComponent } from './address-form/address-form.component';
+import { LessonsFormComponent } from './lessons-form/lessons-form.component';
 
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -15,6 +16,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
 import {MatIconModule} from '@angular/material/icon';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   imports:      [ 
@@ -28,14 +30,15 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatInputModule,
     MatIconModule,
     MatProgressBarModule,
+    MatSelectModule,
     HttpClientModule
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent,
     FileUploadComponent,
-    AddressFormComponent
-
+    AddressFormComponent,
+    LessonsFormComponent
   ],
   bootstrap:    [ AppComponent ]
 })
